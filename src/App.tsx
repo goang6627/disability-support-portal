@@ -10,12 +10,16 @@ import {
   Send,
 } from 'lucide-react'
 import { AccessibilityToolbar } from './components/AccessibilityToolbar'
+import { RouteEffects } from './components/RouteEffects'
 import { HomePage } from './pages/HomePage'
 import { ServicesPage } from './pages/ServicesPage'
 import { PoliciesPage } from './pages/PoliciesPage'
 import { AssistantPage } from './pages/AssistantPage'
 import { RequestPage } from './pages/RequestPage'
 import { AccessibilityPage } from './pages/AccessibilityPage'
+import { ServiceDetailPage } from './pages/ServiceDetailPage'
+import { PolicyDetailPage } from './pages/PolicyDetailPage'
+import { NotFoundPage } from './pages/NotFoundPage'
 import './App.css'
 
 const navigationItems = [
@@ -30,6 +34,7 @@ const navigationItems = [
 function App() {
   return (
     <div className="app-shell">
+      <RouteEffects />
       <a className="skip-link" href="#main-content">
         Bỏ qua điều hướng, tới nội dung chính
       </a>
@@ -70,10 +75,13 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/dich-vu" element={<ServicesPage />} />
+          <Route path="/dich-vu/:serviceId" element={<ServiceDetailPage />} />
           <Route path="/chinh-sach" element={<PoliciesPage />} />
+          <Route path="/chinh-sach/:policyId" element={<PolicyDetailPage />} />
           <Route path="/tro-ly" element={<AssistantPage />} />
           <Route path="/gui-yeu-cau" element={<RequestPage />} />
           <Route path="/tiep-can" element={<AccessibilityPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
 

@@ -98,15 +98,9 @@ export function ServicesPage() {
               </li>
             </ul>
             <p className="note-block">{service.accessibilityNotes}</p>
-            {service.sourceUrl ? (
-              <a href={service.sourceUrl} target="_blank" rel="noreferrer">
-                Xem nguồn liên quan <ArrowRight aria-hidden="true" size={17} />
-              </a>
-            ) : (
-              <Link to="/gui-yeu-cau">
-                Gửi yêu cầu để được hướng dẫn <ArrowRight aria-hidden="true" size={17} />
-              </Link>
-            )}
+            <Link to={`/dich-vu/${service.id}`}>
+              Xem chi tiết dịch vụ <ArrowRight aria-hidden="true" size={17} />
+            </Link>
           </article>
         ))}
       </div>

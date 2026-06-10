@@ -1,4 +1,5 @@
-import { ExternalLink } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { ArrowRight, ExternalLink } from 'lucide-react'
 import { policies } from '../data/policies'
 
 export function PoliciesPage() {
@@ -52,6 +53,9 @@ export function PoliciesPage() {
             <div className="policy-card__footer">
               <span>Hiệu lực: {policy.effectiveDate}</span>
               <span>Rà soát: {policy.lastReviewed}</span>
+              <Link to={`/chinh-sach/${policy.id}`}>
+                Xem tóm tắt chi tiết <ArrowRight aria-hidden="true" size={16} />
+              </Link>
               <a href={policy.sourceUrl} target="_blank" rel="noreferrer">
                 {policy.sourceName} <ExternalLink aria-hidden="true" size={16} />
               </a>

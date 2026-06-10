@@ -1,7 +1,17 @@
 import { expect, test } from '@playwright/test'
 import AxeBuilder from '@axe-core/playwright'
 
-const routes = ['/', '/dich-vu', '/chinh-sach', '/tro-ly', '/gui-yeu-cau', '/tiep-can']
+const routes = [
+  '/',
+  '/dich-vu',
+  '/dich-vu/huong-dan-tro-cap-xa-hoi',
+  '/chinh-sach',
+  '/chinh-sach/nghi-dinh-20-2021',
+  '/tro-ly',
+  '/gui-yeu-cau',
+  '/tiep-can',
+  '/khong-ton-tai',
+]
 
 for (const route of routes) {
   test(`has no critical accessibility violations on ${route}`, async ({ page }) => {
@@ -26,5 +36,16 @@ test('support request form reports errors and accepts a valid demo request', asy
   await page.getByLabel('Tôi hiểu đây là bản demo').check()
   await page.getByRole('button', { name: 'Tạo yêu cầu demo' }).click()
 
-  await expect(page.getByRole('status')).toContainText('Đã tạo yêu cầu demo')
+  await expect(page.locator('.success-panel')).toContainText('Đã tạo yêu cầu demo')
+})
+
+test('internal detail navigation updates page title and content', async ({ page }) => {
+  await page.goto('/dich-vu')
+  await page.getByRole('link', { name: 'Xem chi tiết dịch vụ' }).first().click()
+
+  await expect(page).toHaveTitle(/Hướng dẫn thủ tục trợ cấp xã hội/)
+  await expect(page.getByRole('heading', { name: 'Ghi chú tiếp cận' })).toBeVisible()
+
+  await page.getByRole('link', { name: 'Quay lại dịch vụ hỗ trợ' }).click()
+  await expect(page).toHaveURL(/\/dich-vu$/)
 })
