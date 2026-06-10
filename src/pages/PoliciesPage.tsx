@@ -6,13 +6,22 @@ export function PoliciesPage() {
   return (
     <section className="page-section" aria-labelledby="policies-title">
       <div className="page-intro">
-        <p className="eyebrow">Chính sách & quyền lợi</p>
-        <h1 id="policies-title">Thông tin chính sách có tóm tắt và nguồn chính thức</h1>
-        <p>
-          Mỗi mục được viết bằng ngôn ngữ dễ hiểu, có nguồn, ngày hiệu lực và ngày
-          rà soát. Nội dung không thay thế tư vấn pháp lý hoặc xác nhận từ cơ quan
-          có thẩm quyền.
-        </p>
+        <div>
+          <p className="eyebrow">Chính sách & quyền lợi</p>
+          <h1 id="policies-title">Thông tin chính sách có tóm tắt và nguồn chính thức</h1>
+          <p>
+            Mỗi mục được viết bằng ngôn ngữ dễ hiểu, có nguồn, ngày hiệu lực và ngày
+            rà soát. Nội dung không thay thế tư vấn pháp lý hoặc xác nhận từ cơ quan
+            có thẩm quyền.
+          </p>
+        </div>
+        <img
+          className="page-intro__image"
+          src="/images/policy-access.jpg"
+          alt="Người dùng và nhân viên hỗ trợ cùng xem tài liệu chính sách, bên cạnh có bảng chữ nổi và máy tính bảng ở chế độ chữ lớn."
+          width="1280"
+          height="960"
+        />
       </div>
 
       <div className="policy-list">

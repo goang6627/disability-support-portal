@@ -29,6 +29,13 @@ export function HomePage() {
         </div>
 
         <aside className="hero-panel" aria-label="Tóm tắt khả năng tiếp cận">
+          <img
+            className="hero-panel__image"
+            src="/images/hero-support.jpg"
+            alt="Người nhìn kém dùng điện thoại có tai nghe tại bàn hỗ trợ, bên cạnh là nhân viên hướng dẫn trong bối cảnh thành phố Huế."
+            width="1280"
+            height="720"
+          />
           <div className="hero-panel__top">
             <HandHeart aria-hidden="true" size={34} />
             <p>Thiết kế cho người khiếm thị/nhìn kém trước, mở rộng cho cộng đồng.</p>

@@ -33,12 +33,21 @@ export function AssistantPage() {
   return (
     <section className="page-section" aria-labelledby="assistant-title">
       <div className="page-intro">
-        <p className="eyebrow">Trợ lý tìm dịch vụ</p>
-        <h1 id="assistant-title">Trả lời vài câu hỏi để nhận gợi ý phù hợp</h1>
-        <p>
-          Wizard dùng form chuẩn, không ẩn thông tin quan trọng trong hiệu ứng, và
-          kết quả được thông báo bằng vùng live region cho screen reader.
-        </p>
+        <div>
+          <p className="eyebrow">Trợ lý tìm dịch vụ</p>
+          <h1 id="assistant-title">Trả lời vài câu hỏi để nhận gợi ý phù hợp</h1>
+          <p>
+            Wizard dùng form chuẩn, không ẩn thông tin quan trọng trong hiệu ứng, và
+            kết quả được thông báo bằng vùng live region cho screen reader.
+          </p>
+        </div>
+        <img
+          className="page-intro__image"
+          src="/images/assistant-wizard.jpg"
+          alt="Người nhìn kém cùng nhân viên hỗ trợ xem các bước lựa chọn dịch vụ trên máy tính bảng."
+          width="1280"
+          height="960"
+        />
       </div>
 
       <form className="wizard-panel" aria-describedby="assistant-help">

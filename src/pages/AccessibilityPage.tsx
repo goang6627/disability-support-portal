@@ -13,12 +13,21 @@ export function AccessibilityPage() {
   return (
     <section className="page-section" aria-labelledby="accessibility-title">
       <div className="page-intro">
-        <p className="eyebrow">Cam kết tiếp cận</p>
-        <h1 id="accessibility-title">Cách prototype đáp ứng WCAG 2.2</h1>
-        <p>
-          Trang này dùng làm bằng chứng thuyết minh cho cuộc thi: nêu các quyết
-          định thiết kế, cách kiểm thử và ranh giới của bản prototype.
-        </p>
+        <div>
+          <p className="eyebrow">Cam kết tiếp cận</p>
+          <h1 id="accessibility-title">Cách prototype đáp ứng WCAG 2.2</h1>
+          <p>
+            Trang này dùng làm bằng chứng thuyết minh cho cuộc thi: nêu các quyết
+            định thiết kế, cách kiểm thử và ranh giới của bản prototype.
+          </p>
+        </div>
+        <img
+          className="page-intro__image"
+          src="/images/wcag-audit.jpg"
+          alt="Nhóm sinh viên kiểm tra giao diện tiếp cận với bảng chữ nổi, bảng màu tương phản và checklist WCAG."
+          width="1280"
+          height="960"
+        />
       </div>
 
       <div className="commitment-grid">

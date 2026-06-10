@@ -96,12 +96,21 @@ export function RequestPage() {
   return (
     <section className="page-section" aria-labelledby="request-title">
       <div className="page-intro">
-        <p className="eyebrow">Gửi yêu cầu demo</p>
-        <h1 id="request-title">Form hỗ trợ an toàn, rõ lỗi và dùng được bằng bàn phím</h1>
-        <p>
-          Bản dự thi không gửi dữ liệu cá nhân lên server. Yêu cầu chỉ lưu trong
-          trình duyệt bằng localStorage để minh họa quy trình xử lý.
-        </p>
+        <div>
+          <p className="eyebrow">Gửi yêu cầu demo</p>
+          <h1 id="request-title">Form hỗ trợ an toàn, rõ lỗi và dùng được bằng bàn phím</h1>
+          <p>
+            Bản dự thi không gửi dữ liệu cá nhân lên server. Yêu cầu chỉ lưu trong
+            trình duyệt bằng localStorage để minh họa quy trình xử lý.
+          </p>
+        </div>
+        <img
+          className="page-intro__image"
+          src="/images/request-support.jpg"
+          alt="Người dùng nhìn kém cùng người chăm sóc xem form hỗ trợ trên điện thoại và máy tính với giao diện chữ lớn."
+          width="1280"
+          height="960"
+        />
       </div>
 
       {errors.length > 0 && (

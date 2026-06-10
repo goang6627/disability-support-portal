@@ -33,12 +33,21 @@ export function ServicesPage() {
   return (
     <section className="page-section" aria-labelledby="services-title">
       <div className="page-intro">
-        <p className="eyebrow">Tra cứu dịch vụ</p>
-        <h1 id="services-title">Dịch vụ hỗ trợ dễ lọc và đọc được bằng screen reader</h1>
-        <p>
-          Dữ liệu mẫu ưu tiên bối cảnh Huế. Mục đã có nguồn chính thức được đánh dấu
-          “đã kiểm chứng”; mục demo cần kiểm tra lại trước khi sử dụng thật.
-        </p>
+        <div>
+          <p className="eyebrow">Tra cứu dịch vụ</p>
+          <h1 id="services-title">Dịch vụ hỗ trợ dễ lọc và đọc được bằng screen reader</h1>
+          <p>
+            Dữ liệu mẫu ưu tiên bối cảnh Huế. Mục đã có nguồn chính thức được đánh dấu
+            “đã kiểm chứng”; mục demo cần kiểm tra lại trước khi sử dụng thật.
+          </p>
+        </div>
+        <img
+          className="page-intro__image"
+          src="/images/service-directory.jpg"
+          alt="Bàn tư vấn dịch vụ hỗ trợ với laptop, thẻ thông tin trực quan và gậy trắng đặt cạnh người dùng."
+          width="1280"
+          height="960"
+        />
       </div>
 
       <form className="filter-panel" role="search" aria-label="Lọc dịch vụ hỗ trợ">
