@@ -1,0 +1,19 @@
+{
+  "name": "Cổng Thông Tin Hỗ Trợ Người Khuyết Tật",
+  "short_name": "Hỗ Trợ NKT",
+  "description": "Bản dự thi WCAG 2.2 hỗ trợ người khiếm thị/nhìn kém tra cứu chính sách, dịch vụ và tạo yêu cầu cục bộ an toàn.",
+  "lang": "vi",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7faf9",
+  "theme_color": "#006c5b",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

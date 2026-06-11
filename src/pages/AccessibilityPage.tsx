@@ -15,10 +15,10 @@ export function AccessibilityPage() {
       <div className="page-intro">
         <div>
           <p className="eyebrow">Cam kết tiếp cận</p>
-          <h1 id="accessibility-title">Cách prototype đáp ứng WCAG 2.2</h1>
+          <h1 id="accessibility-title">Cách bản dự thi đáp ứng WCAG 2.2</h1>
           <p>
             Trang này dùng làm bằng chứng thuyết minh cho cuộc thi: nêu các quyết
-            định thiết kế, cách kiểm thử và ranh giới của bản prototype.
+            định thiết kế, cách kiểm thử và ranh giới dữ liệu của bản dự thi.
           </p>
         </div>
         <img

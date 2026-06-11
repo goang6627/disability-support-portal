@@ -18,12 +18,12 @@ Giúp người khiếm thị/nhìn kém tại Huế tra cứu thông tin hỗ tr
 1. Vào trang chủ.
 2. Dùng trợ lý tìm dịch vụ hoặc danh sách dịch vụ.
 3. Đọc chính sách có nguồn.
-4. Gửi yêu cầu hỗ trợ demo.
+4. Tạo yêu cầu hỗ trợ cục bộ.
 5. Nhận mã yêu cầu lưu cục bộ.
 
-## Phạm vi prototype
+## Phạm vi bản dự thi
 
 - Không có backend thật.
 - Không gửi dữ liệu cá nhân lên server.
 - Chính sách hiển thị dạng tóm tắt + nguồn.
-- Dịch vụ địa phương chưa kiểm chứng được đánh dấu là dữ liệu demo.
+- Dịch vụ địa phương chưa kiểm chứng được đánh dấu là dữ liệu cần xác minh.

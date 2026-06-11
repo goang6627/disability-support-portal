@@ -29,7 +29,7 @@ export function ServiceDetailPage() {
         <div className="page-intro">
           <p className="eyebrow">Không tìm thấy</p>
           <h1 id="service-not-found-title">Không tìm thấy dịch vụ này</h1>
-          <p>Dịch vụ có thể đã được đổi tên hoặc chưa có trong dữ liệu prototype.</p>
+          <p>Dịch vụ có thể đã được đổi tên hoặc chưa có trong dữ liệu bản dự thi.</p>
           <Link className="button button--primary" to="/dich-vu">
             <ArrowLeft aria-hidden="true" size={18} />
             Quay lại danh sách dịch vụ
@@ -70,12 +70,12 @@ export function ServiceDetailPage() {
             <h2 id="next-step-title">Bước tiếp theo</h2>
             <p>
               Nếu thông tin này phù hợp với nhu cầu của bạn, hãy ghi lại tên dịch vụ
-              và gửi yêu cầu demo để hệ thống tạo mã theo dõi. Với tình huống thực tế,
-              hãy xác nhận lại với cơ quan hoặc tổ chức phụ trách.
+              và tạo yêu cầu cục bộ để hệ thống tạo mã theo dõi. Với tình huống thực
+              tế, hãy xác nhận lại với cơ quan hoặc tổ chức phụ trách.
             </p>
             <Link className="button button--primary" to="/gui-yeu-cau">
               <Send aria-hidden="true" size={18} />
-              Gửi yêu cầu hỗ trợ demo
+              Tạo yêu cầu cục bộ
             </Link>
           </section>
         </div>
@@ -116,7 +116,7 @@ export function ServiceDetailPage() {
             <p className="verification-badge">
               {service.verificationStatus === 'verified'
                 ? 'Đã kiểm chứng nguồn'
-                : 'Dữ liệu demo cần kiểm chứng'}
+                : 'Dữ liệu cần kiểm chứng'}
             </p>
             {service.sourceUrl ? (
               <a href={service.sourceUrl} target="_blank" rel="noreferrer">
@@ -124,7 +124,7 @@ export function ServiceDetailPage() {
               </a>
             ) : (
               <p className="form-help">
-                Chưa có nguồn chính thức trong prototype. Không dùng như dữ liệu thật.
+                Chưa có nguồn chính thức trong bản dự thi. Không dùng như dữ liệu thật.
               </p>
             )}
           </div>

@@ -8,7 +8,7 @@ export function NotFoundPage() {
         <p className="eyebrow">404</p>
         <h1 id="not-found-title">Không tìm thấy trang</h1>
         <p>
-          Đường dẫn này không tồn tại trong prototype. Bạn có thể quay lại trang chủ
+          Đường dẫn này không tồn tại trong ứng dụng. Bạn có thể quay lại trang chủ
           hoặc mở trợ lý tìm dịch vụ để tiếp tục.
         </p>
         <div className="hero-actions">

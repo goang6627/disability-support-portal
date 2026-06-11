@@ -1,4 +1,4 @@
-import { NavLink, Route, Routes } from 'react-router-dom'
+import { Link, NavLink, Route, Routes } from 'react-router-dom'
 import {
   Accessibility,
   Building2,
@@ -20,6 +20,7 @@ import { AccessibilityPage } from './pages/AccessibilityPage'
 import { ServiceDetailPage } from './pages/ServiceDetailPage'
 import { PolicyDetailPage } from './pages/PolicyDetailPage'
 import { NotFoundPage } from './pages/NotFoundPage'
+import { PrivacyPage } from './pages/PrivacyPage'
 import './App.css'
 
 const navigationItems = [
@@ -81,6 +82,7 @@ function App() {
           <Route path="/tro-ly" element={<AssistantPage />} />
           <Route path="/gui-yeu-cau" element={<RequestPage />} />
           <Route path="/tiep-can" element={<AccessibilityPage />} />
+          <Route path="/quyen-rieng-tu" element={<PrivacyPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
@@ -90,9 +92,13 @@ function App() {
           <div>
             <h2>Cổng Thông Tin Hỗ Trợ Người Khuyết Tật</h2>
             <p>
-              Prototype dự thi WCAG 2.2. Thông tin chính sách trong bản mẫu chỉ
-              dùng để tham khảo và luôn kèm nguồn chính thức.
+              Bản dự thi WCAG 2.2. Thông tin chính sách được tóm tắt từ nguồn
+              chính thức; dữ liệu chưa kiểm chứng được đánh dấu rõ ràng.
             </p>
+            <div className="footer-links" aria-label="Liên kết bổ sung">
+              <Link to="/quyen-rieng-tu">Quyền riêng tư & dữ liệu</Link>
+              <Link to="/tiep-can">Cam kết tiếp cận</Link>
+            </div>
           </div>
           <div className="footer-contact" aria-label="Thông tin dự án">
             <Building2 aria-hidden="true" size={20} />

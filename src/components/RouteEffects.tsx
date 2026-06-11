@@ -26,6 +26,7 @@ function getRouteTitle(pathname: string) {
     '/tro-ly': `Trợ lý tìm dịch vụ | ${siteTitle}`,
     '/gui-yeu-cau': `Gửi yêu cầu hỗ trợ | ${siteTitle}`,
     '/tiep-can': `Cam kết tiếp cận WCAG 2.2 | ${siteTitle}`,
+    '/quyen-rieng-tu': `Quyền riêng tư và dữ liệu | ${siteTitle}`,
   }
 
   return titles[pathname] ?? `Không tìm thấy trang | ${siteTitle}`

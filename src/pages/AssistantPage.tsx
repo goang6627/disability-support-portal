@@ -54,8 +54,8 @@ export function AssistantPage() {
 
       <form className="wizard-panel" aria-describedby="assistant-help">
         <p id="assistant-help" className="form-help">
-          Chọn nhu cầu gần nhất. Đây là gợi ý demo, không thay thế tư vấn từ cơ quan
-          hoặc tổ chức hỗ trợ.
+          Chọn nhu cầu gần nhất. Gợi ý trong bản dự thi không thay thế tư vấn từ
+          cơ quan hoặc tổ chức hỗ trợ.
         </p>
 
         <fieldset>
@@ -162,7 +162,7 @@ export function AssistantPage() {
         </div>
 
         <Link className="button button--primary" to="/gui-yeu-cau">
-          Gửi yêu cầu hỗ trợ demo <ArrowRight aria-hidden="true" size={18} />
+          Tạo yêu cầu cục bộ <ArrowRight aria-hidden="true" size={18} />
         </Link>
       </section>
     </section>

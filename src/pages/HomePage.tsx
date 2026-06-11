@@ -15,7 +15,7 @@ const userStories = [
   {
     title: 'Chọn dịch vụ phù hợp theo tình huống',
     description:
-      'Danh sách dịch vụ phân biệt dữ liệu đã kiểm chứng và dữ liệu demo, giúp người dùng không nhầm thông tin mẫu là thông tin chính thức.',
+      'Danh sách dịch vụ phân biệt dữ liệu đã kiểm chứng và dữ liệu cần xác minh, giúp người dùng không nhầm thông tin mẫu là thông tin chính thức.',
     image: '/images/service-directory.jpg',
     alt: 'Bàn tư vấn dịch vụ hỗ trợ với laptop, các thẻ thông tin trực quan và gậy trắng cạnh ghế người dùng.',
     to: '/dich-vu',
@@ -29,9 +29,9 @@ const userStories = [
     to: '/tro-ly',
   },
   {
-    title: 'Gửi yêu cầu demo an toàn',
+    title: 'Tạo yêu cầu cục bộ an toàn',
     description:
-      'Form minh họa quy trình tiếp nhận yêu cầu, tạo mã theo dõi và chỉ lưu dữ liệu trong trình duyệt ở bản prototype.',
+      'Form minh họa quy trình tiếp nhận yêu cầu, tạo mã theo dõi và chỉ lưu dữ liệu trong trình duyệt của người dùng.',
     image: '/images/request-support.jpg',
     alt: 'Người dùng nhìn kém cùng người chăm sóc xem thẻ yêu cầu hỗ trợ bên cạnh laptop có form chữ lớn.',
     to: '/gui-yeu-cau',
@@ -45,7 +45,7 @@ export function HomePage() {
     <>
       <section className="hero-section">
         <div className="hero-section__content">
-          <p className="eyebrow">Prototype WCAG 2.2 cho cuộc thi tiếp cận số</p>
+          <p className="eyebrow">Bản dự thi WCAG 2.2 cho cuộc thi tiếp cận số</p>
           <h1>Cổng thông tin giúp người khiếm thị tìm hỗ trợ nhanh và rõ ràng.</h1>
           <p className="hero-section__lead">
             Tra cứu chính sách, dịch vụ, tổ chức hỗ trợ và gửi yêu cầu trợ giúp bằng
@@ -80,7 +80,7 @@ export function HomePage() {
           <dl className="metrics-grid">
             <div>
               <dt>{services.length}</dt>
-              <dd>dịch vụ mẫu</dd>
+              <dd>dịch vụ đã phân loại</dd>
             </div>
             <div>
               <dt>{verifiedPolicies.length}</dt>
@@ -116,7 +116,7 @@ export function HomePage() {
             {
               title: 'Form yêu cầu an toàn',
               description:
-                'Bản demo lưu yêu cầu trong trình duyệt, tạo mã theo dõi và không gửi dữ liệu thật.',
+                'Yêu cầu được lưu cục bộ trong trình duyệt, tạo mã theo dõi và không gửi dữ liệu thật.',
               to: '/gui-yeu-cau',
             },
           ].map((item) => (

@@ -12,7 +12,7 @@ export function PolicyDetailPage() {
         <div className="page-intro">
           <p className="eyebrow">Không tìm thấy</p>
           <h1 id="policy-not-found-title">Không tìm thấy chính sách này</h1>
-          <p>Chính sách có thể đã được đổi tên hoặc chưa có trong dữ liệu prototype.</p>
+          <p>Chính sách có thể đã được đổi tên hoặc chưa có trong dữ liệu bản dự thi.</p>
           <Link className="button button--primary" to="/chinh-sach">
             <ArrowLeft aria-hidden="true" size={18} />
             Quay lại danh sách chính sách
@@ -61,12 +61,12 @@ export function PolicyDetailPage() {
           <section aria-labelledby="policy-next-title">
             <h2 id="policy-next-title">Cần hỗ trợ đọc hiểu chính sách?</h2>
             <p>
-              Bạn có thể gửi yêu cầu demo để mô tả trường hợp của mình. Trong sản
+              Bạn có thể tạo yêu cầu cục bộ để mô tả trường hợp của mình. Trong sản
               phẩm thật, yêu cầu này sẽ được chuyển tới nhóm hỗ trợ hoặc cán bộ phụ trách.
             </p>
             <Link className="button button--primary" to="/gui-yeu-cau">
               <Send aria-hidden="true" size={18} />
-              Gửi yêu cầu hỗ trợ demo
+              Tạo yêu cầu cục bộ
             </Link>
           </section>
         </div>

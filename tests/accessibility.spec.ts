@@ -10,6 +10,7 @@ const routes = [
   '/tro-ly',
   '/gui-yeu-cau',
   '/tiep-can',
+  '/quyen-rieng-tu',
   '/khong-ton-tai',
 ]
 
@@ -25,18 +26,18 @@ for (const route of routes) {
   })
 }
 
-test('support request form reports errors and accepts a valid demo request', async ({ page }) => {
+test('support request form reports errors and accepts a valid local request', async ({ page }) => {
   await page.goto('/gui-yeu-cau')
-  await page.getByRole('button', { name: 'Tạo yêu cầu demo' }).click()
+  await page.getByRole('button', { name: 'Tạo yêu cầu cục bộ' }).click()
   await expect(page.getByRole('alert')).toContainText('Cần kiểm tra lại thông tin')
 
   await page.getByLabel('Họ tên hoặc tên đại diện').fill('Nguyễn Văn A')
   await page.getByLabel('Thông tin liên hệ').fill('0900000000')
   await page.getByLabel('Mô tả nhu cầu hỗ trợ').fill('Tôi cần tìm thông tin về chính sách trợ cấp xã hội.')
-  await page.getByLabel('Tôi hiểu đây là bản demo').check()
-  await page.getByRole('button', { name: 'Tạo yêu cầu demo' }).click()
+  await page.getByLabel('Tôi hiểu dữ liệu chỉ lưu trên trình duyệt hiện tại').check()
+  await page.getByRole('button', { name: 'Tạo yêu cầu cục bộ' }).click()
 
-  await expect(page.locator('.success-panel')).toContainText('Đã tạo yêu cầu demo')
+  await expect(page.locator('.success-panel')).toContainText('Đã tạo yêu cầu cục bộ')
 })
 
 test('internal detail navigation updates page title and content', async ({ page }) => {

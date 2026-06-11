@@ -18,4 +18,4 @@
 
 - Rà lại ngày hiệu lực và tình trạng văn bản.
 - Nếu thêm tổ chức/dịch vụ địa phương, cần nguồn chính thức hoặc xác nhận trực tiếp.
-- Không hiển thị số điện thoại/email demo như dữ liệu thật.
+- Không hiển thị số điện thoại/email mẫu như dữ liệu thật.

@@ -37,8 +37,8 @@ export function ServicesPage() {
           <p className="eyebrow">Tra cứu dịch vụ</p>
           <h1 id="services-title">Dịch vụ hỗ trợ dễ lọc và đọc được bằng screen reader</h1>
           <p>
-            Dữ liệu mẫu ưu tiên bối cảnh Huế. Mục đã có nguồn chính thức được đánh dấu
-            “đã kiểm chứng”; mục demo cần kiểm tra lại trước khi sử dụng thật.
+            Dữ liệu ưu tiên bối cảnh Huế. Mục đã có nguồn chính thức được đánh dấu
+            “đã kiểm chứng”; mục còn lại cần kiểm tra lại trước khi sử dụng thật.
           </p>
         </div>
         <img
@@ -91,7 +91,7 @@ export function ServicesPage() {
                 <p className="status-label">
                   {service.verificationStatus === 'verified'
                     ? 'Đã kiểm chứng nguồn'
-                    : 'Dữ liệu demo'}
+                    : 'Cần xác minh địa phương'}
                 </p>
                 <h2>{service.name}</h2>
               </div>

@@ -32,4 +32,4 @@
 - Required validation is clear.
 - Errors identify what happened and how to fix it.
 - Success state gives a request ID.
-- Prototype stores data only in localStorage.
+- Support requests are stored only in localStorage during the contest build.

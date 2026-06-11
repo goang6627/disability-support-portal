@@ -1,6 +1,6 @@
 # Cổng Thông Tin Hỗ Trợ Người Khuyết Tật
 
-Prototype web dự thi theo chuẩn WCAG 2.2, ưu tiên người khiếm thị/nhìn kém cần tìm thông tin hỗ trợ, chính sách, tổ chức và gửi yêu cầu trợ giúp.
+Bản dự thi web theo chuẩn WCAG 2.2, ưu tiên người khiếm thị/nhìn kém cần tìm thông tin hỗ trợ, chính sách, tổ chức và gửi yêu cầu trợ giúp.
 
 ## Đối tượng
 
@@ -45,4 +45,4 @@ npx playwright install chromium
 
 ## Ghi chú dữ liệu
 
-Các chính sách hỗ trợ phải có `sourceUrl`, `sourceName`, `lastReviewed` và trạng thái kiểm chứng. Bản prototype không gửi dữ liệu form lên server; yêu cầu demo chỉ lưu trong `localStorage`.
+Các chính sách hỗ trợ phải có `sourceUrl`, `sourceName`, `lastReviewed` và trạng thái kiểm chứng. Bản dự thi không gửi dữ liệu form lên server; yêu cầu chỉ lưu cục bộ trong `localStorage`.

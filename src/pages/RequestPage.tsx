@@ -54,7 +54,7 @@ export function RequestPage() {
       nextErrors.push('Vui lòng mô tả nhu cầu hỗ trợ cụ thể hơn.')
     }
     if (!form.consent) {
-      nextErrors.push('Vui lòng xác nhận đây là bản demo và dữ liệu chỉ lưu trên trình duyệt.')
+      nextErrors.push('Vui lòng xác nhận dữ liệu chỉ lưu trên trình duyệt hiện tại.')
     }
 
     return nextErrors
@@ -97,7 +97,7 @@ export function RequestPage() {
     <section className="page-section" aria-labelledby="request-title">
       <div className="page-intro">
         <div>
-          <p className="eyebrow">Gửi yêu cầu demo</p>
+          <p className="eyebrow">Gửi yêu cầu hỗ trợ</p>
           <h1 id="request-title">Form hỗ trợ an toàn, rõ lỗi và dùng được bằng bàn phím</h1>
           <p>
             Bản dự thi không gửi dữ liệu cá nhân lên server. Yêu cầu chỉ lưu trong
@@ -134,7 +134,7 @@ export function RequestPage() {
 
       {latestRequest && (
         <div className="success-panel" role="status" aria-live="polite">
-          <h2>Đã tạo yêu cầu demo</h2>
+          <h2>Đã tạo yêu cầu cục bộ</h2>
           <p>
             Mã yêu cầu của bạn là <strong>{latestRequest.id}</strong>. Trong sản phẩm
             thật, mã này sẽ được dùng để theo dõi phản hồi từ nhóm hỗ trợ.
@@ -243,21 +243,21 @@ export function RequestPage() {
             checked={form.consent}
             onChange={(event) => updateField('consent', event.target.checked)}
           />
-          <span>Tôi hiểu đây là bản demo; dữ liệu chỉ lưu trên trình duyệt hiện tại.</span>
+          <span>Tôi hiểu dữ liệu chỉ lưu trên trình duyệt hiện tại và không gửi lên server.</span>
         </label>
 
         <button className="button button--primary" type="submit">
-          Tạo yêu cầu demo
+          Tạo yêu cầu cục bộ
         </button>
       </form>
 
       {hasRequests && (
         <section className="stored-requests" aria-labelledby="stored-requests-title">
           <div className="section-heading">
-            <h2 id="stored-requests-title">Yêu cầu demo đã lưu trên trình duyệt</h2>
+            <h2 id="stored-requests-title">Yêu cầu đã lưu trên trình duyệt</h2>
             <button className="button button--danger" type="button" onClick={handleClear}>
               <Trash2 aria-hidden="true" size={18} />
-              Xóa dữ liệu demo
+              Xóa dữ liệu cục bộ
             </button>
           </div>
           <ul className="clean-list request-list">

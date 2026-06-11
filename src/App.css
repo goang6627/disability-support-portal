@@ -728,6 +728,12 @@ fieldset {
   padding-left: 1rem;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1rem;
+}
+
 @media (max-width: 920px) {
   .site-header__inner,
   .hero-section,

@@ -28,7 +28,7 @@ export const services: Service[] = [
     phone: '0234 111 111',
     verificationStatus: 'sample',
     accessibilityNotes:
-      'Dữ liệu demo. Khi dùng thật cần thay bằng thông tin từ hội/cơ quan địa phương đã xác minh.',
+      'Dữ liệu cần xác minh. Khi dùng thật cần thay bằng thông tin từ hội/cơ quan địa phương đã xác minh.',
   },
   {
     id: 'tu-van-hoc-tap-tiep-can',
@@ -79,14 +79,14 @@ export const services: Service[] = [
     name: 'Gửi yêu cầu hỗ trợ khẩn hoặc cần phản hồi sớm',
     category: 'urgent',
     description:
-      'Luồng demo giúp người dùng mô tả nhu cầu cần hỗ trợ nhanh và nhận mã yêu cầu để theo dõi nội bộ.',
+      'Luồng cục bộ giúp người dùng mô tả nhu cầu cần hỗ trợ nhanh và nhận mã yêu cầu để theo dõi nội bộ.',
     targetUsers: ['visual', 'mobility', 'caregiver'],
     district: 'Toàn thành phố Huế',
-    address: 'Form demo trong hệ thống',
-    phone: 'Không áp dụng trong prototype',
+    address: 'Form cục bộ trong hệ thống',
+    phone: 'Không áp dụng trong bản dự thi',
     verificationStatus: 'sample',
     accessibilityNotes:
-      'Bản demo không gửi dữ liệu thật. Người dùng cần gọi cơ quan chức năng trong tình huống khẩn cấp thực tế.',
+      'Form không gửi dữ liệu thật. Người dùng cần gọi cơ quan chức năng trong tình huống khẩn cấp thực tế.',
   },
 ]
 
@@ -106,10 +106,10 @@ export const organizations: Organization[] = [
     verificationStatus: 'verified',
   },
   {
-    id: 'nhom-tinh-nguyen-demo',
+    id: 'nhom-tinh-nguyen-mau',
     name: 'Nhóm tình nguyện hỗ trợ tiếp cận số',
     role: 'Dữ liệu mẫu cho luồng kết nối cộng đồng và hỗ trợ đọc tài liệu.',
-    contact: 'demo@example.org',
+    contact: 'sample@example.org',
     verificationStatus: 'sample',
   },
 ]
