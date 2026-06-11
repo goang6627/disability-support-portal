@@ -27,6 +27,8 @@ export function AccessibilityPage() {
           alt="Nhóm sinh viên kiểm tra giao diện tiếp cận với bảng chữ nổi, bảng màu tương phản và checklist WCAG."
           width="1280"
           height="960"
+          loading="lazy"
+          decoding="async"
         />
       </div>
 

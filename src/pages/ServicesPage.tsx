@@ -47,6 +47,8 @@ export function ServicesPage() {
           alt="Bàn tư vấn dịch vụ hỗ trợ với laptop, thẻ thông tin trực quan và gậy trắng đặt cạnh người dùng."
           width="1280"
           height="960"
+          loading="lazy"
+          decoding="async"
         />
       </div>
 

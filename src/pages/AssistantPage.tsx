@@ -47,6 +47,8 @@ export function AssistantPage() {
           alt="Người nhìn kém cùng nhân viên hỗ trợ xem các bước lựa chọn dịch vụ trên máy tính bảng."
           width="1280"
           height="960"
+          loading="lazy"
+          decoding="async"
         />
       </div>
 

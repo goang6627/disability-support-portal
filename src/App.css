@@ -199,7 +199,7 @@ main[tabindex='-1']:focus {
   grid-template-columns: minmax(0, 1.3fr) minmax(290px, 0.7fr);
   gap: 2rem;
   align-items: stretch;
-  min-height: 68dvh;
+  min-height: 58dvh;
   padding: 3rem 0;
 }
 
@@ -242,7 +242,7 @@ h3 {
 
 h1 {
   max-width: 13ch;
-  font-size: clamp(2.4rem, 6vw, 4.9rem);
+  font-size: clamp(2.4rem, 5.4vw, 4.35rem);
   letter-spacing: 0;
 }
 
@@ -351,7 +351,8 @@ p {
 .feature-grid,
 .commitment-grid,
 .service-list,
-.policy-list {
+.policy-list,
+.story-grid {
   display: grid;
   gap: 1rem;
 }
@@ -364,13 +365,45 @@ p {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.story-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .feature-card,
 .service-card,
-.policy-card {
+.policy-card,
+.story-card {
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   background: var(--color-surface);
+}
+
+.feature-card,
+.service-card,
+.policy-card {
   padding: 1.2rem;
+}
+
+.story-card {
+  display: grid;
+  overflow: hidden;
+}
+
+.story-card__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.story-card__body {
+  display: grid;
+  gap: 0.45rem;
+  padding: 1.1rem;
+}
+
+.story-card__body p {
+  color: var(--color-muted);
 }
 
 .feature-card svg {
@@ -379,7 +412,8 @@ p {
 
 .feature-card a,
 .service-card a,
-.policy-card a {
+.policy-card a,
+.story-card a {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
@@ -701,6 +735,7 @@ fieldset {
   .service-list,
   .feature-grid,
   .commitment-grid,
+  .story-grid,
   .detail-layout,
   .page-intro,
   .two-column,

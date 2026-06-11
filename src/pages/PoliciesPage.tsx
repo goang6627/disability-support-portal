@@ -21,6 +21,8 @@ export function PoliciesPage() {
           alt="Người dùng và nhân viên hỗ trợ cùng xem tài liệu chính sách, bên cạnh có bảng chữ nổi và máy tính bảng ở chế độ chữ lớn."
           width="1280"
           height="960"
+          loading="lazy"
+          decoding="async"
         />
       </div>
 

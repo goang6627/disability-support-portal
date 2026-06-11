@@ -110,6 +110,8 @@ export function RequestPage() {
           alt="Người dùng nhìn kém cùng người chăm sóc xem form hỗ trợ trên điện thoại và máy tính với giao diện chữ lớn."
           width="1280"
           height="960"
+          loading="lazy"
+          decoding="async"
         />
       </div>
 

@@ -3,6 +3,41 @@ import { ArrowRight, CheckCircle2, FileText, HandHeart, Search } from 'lucide-re
 import { policies } from '../data/policies'
 import { services } from '../data/services'
 
+const userStories = [
+  {
+    title: 'Tìm nơi hỏi thủ tục trợ cấp',
+    description:
+      'Người dùng có thể bắt đầu từ nhu cầu chính sách, xem nguồn đã kiểm chứng và biết nên liên hệ cấp xã/phường để xác nhận hồ sơ.',
+    image: '/images/policy-access.jpg',
+    alt: 'Người dùng và nhân viên hỗ trợ cùng xem tài liệu chính sách, bên cạnh có bảng chữ nổi và máy tính bảng chữ lớn.',
+    to: '/chinh-sach/nghi-dinh-20-2021',
+  },
+  {
+    title: 'Chọn dịch vụ phù hợp theo tình huống',
+    description:
+      'Danh sách dịch vụ phân biệt dữ liệu đã kiểm chứng và dữ liệu demo, giúp người dùng không nhầm thông tin mẫu là thông tin chính thức.',
+    image: '/images/service-directory.jpg',
+    alt: 'Bàn tư vấn dịch vụ hỗ trợ với laptop, các thẻ thông tin trực quan và gậy trắng cạnh ghế người dùng.',
+    to: '/dich-vu',
+  },
+  {
+    title: 'Nhận gợi ý qua trợ lý từng bước',
+    description:
+      'Wizard dùng radio group và live region, phù hợp cho người dùng bàn phím và screen reader khi không muốn đọc quá nhiều mục cùng lúc.',
+    image: '/images/assistant-wizard.jpg',
+    alt: 'Người nhìn kém cùng nhân viên hỗ trợ xem các bước lựa chọn dịch vụ trên máy tính bảng.',
+    to: '/tro-ly',
+  },
+  {
+    title: 'Gửi yêu cầu demo an toàn',
+    description:
+      'Form minh họa quy trình tiếp nhận yêu cầu, tạo mã theo dõi và chỉ lưu dữ liệu trong trình duyệt ở bản prototype.',
+    image: '/images/request-support.jpg',
+    alt: 'Người dùng nhìn kém cùng người chăm sóc xem thẻ yêu cầu hỗ trợ bên cạnh laptop có form chữ lớn.',
+    to: '/gui-yeu-cau',
+  },
+]
+
 export function HomePage() {
   const verifiedPolicies = policies.filter((policy) => policy.verificationStatus === 'verified')
 
@@ -35,6 +70,8 @@ export function HomePage() {
             alt="Người nhìn kém dùng điện thoại có tai nghe tại bàn hỗ trợ, bên cạnh là nhân viên hướng dẫn trong bối cảnh thành phố Huế."
             width="1280"
             height="720"
+            fetchPriority="high"
+            decoding="async"
           />
           <div className="hero-panel__top">
             <HandHeart aria-hidden="true" size={34} />
@@ -90,6 +127,40 @@ export function HomePage() {
               <Link to={item.to}>
                 Mở mục này <ArrowRight aria-hidden="true" size={17} />
               </Link>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section-block" aria-labelledby="user-stories-title">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">Tình huống sử dụng</p>
+            <h2 id="user-stories-title">Thiết kế quanh việc người dùng cần làm</h2>
+          </div>
+          <p>
+            Mỗi hình ảnh minh họa một ngữ cảnh thật: tra cứu chính sách, chọn dịch vụ,
+            dùng trợ lý và gửi yêu cầu. Nội dung chính vẫn luôn nằm trong text.
+          </p>
+        </div>
+        <div className="story-grid">
+          {userStories.map((story) => (
+            <article className="story-card" key={story.title}>
+              <img
+                className="story-card__image"
+                src={story.image}
+                alt={story.alt}
+                width="1280"
+                height="960"
+                decoding="async"
+              />
+              <div className="story-card__body">
+                <h3>{story.title}</h3>
+                <p>{story.description}</p>
+                <Link to={story.to}>
+                  Mở luồng này <ArrowRight aria-hidden="true" size={17} />
+                </Link>
+              </div>
             </article>
           ))}
         </div>
